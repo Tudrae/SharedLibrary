@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 80        # Port exposed by the service
       targetPort: 5000  # Flask's internal port
-  type: LoadBalancer  # Use NodePort if not using a cloud provider
+      nodePort: 30080
