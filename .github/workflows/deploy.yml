@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main  # Runs when you push to the main branch
-   paths:
+    paths:
       - 'flask-app/**'
 
 jobs:
