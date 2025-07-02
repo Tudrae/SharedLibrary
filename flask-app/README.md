@@ -30,3 +30,4 @@ To build and run the Docker image for this application, follow these steps:
    
    docker run -p 5000:5000 flask-app
 The application will be accessible at `http://localhost:5000` from your web browser.
+ 
