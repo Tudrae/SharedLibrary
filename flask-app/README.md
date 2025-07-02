@@ -1,4 +1,4 @@
-# Flask Application here
+# Flask Application
 
 This project is a simple Flask web application that serves a home page using an HTML template.
 
