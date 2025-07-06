@@ -10,7 +10,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    env:
+      KUBECONFIG: ${{ github.workspace }}/kubeconfig
     steps:
       - name: Pull the code
         uses: actions/checkout@v3
