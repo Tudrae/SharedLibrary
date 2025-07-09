@@ -31,3 +31,10 @@ To build and run the Docker image for this application, follow these steps:
    docker run -p 5000:5000 flask-app
 The application will be accessible at `http://localhost:5000` from your web browser.
  
+the deploy to kubenet section in deploy.yml file define as disable if you whant it to work on 
+remote machin you need to replace it with the following phars:
+name: Deploy to Kubernetes
+  run: |
+    kubectl apply -f flask-app/k3s/deployment.yaml
+    kubectl apply -f flask-app/k3s/service.yaml
+also in the kubeconfig within the remote machin you need also to point to the local k3s cluster
