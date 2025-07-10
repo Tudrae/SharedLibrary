@@ -39,3 +39,4 @@ name: Deploy to Kubernetes
     kubectl apply -f flask-app/k3s/service.yaml
 also in the kubeconfig within the remote machin you need also to point to the local k3s clusi
 I think to do use the git action is the hardest way....
+That was a good one
